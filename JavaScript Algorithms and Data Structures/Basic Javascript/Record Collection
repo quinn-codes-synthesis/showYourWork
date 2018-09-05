@@ -29,21 +29,15 @@ var collectionCopy = JSON.parse(JSON.stringify(collection));
 
 // Only change code below this line
 function updateRecords(id, prop, value) {
-  if (prop !== "tracks" && value !== "") {
-    collection[id][prop] = value; // updating non-tracks property to hold new value 
-  } else if (prop == "tracks" && value !== "") {
-    if (collection[id].hasOwnProperty("tracks") == false) {
-      collection[id].tracks = [""]; // creating a new "tracks" array
-      collection[id].tracks.push(value); // adding track name to track array
-    } else {
-      collection[id].tracks.push(value);
-    }
+  if (prop != "tracks" && value != "") {
+    collection[id][prop] = value; //setting value for non-track prop
+  } else if (prop == "tracks" && collection[id].hasOwnProperty(prop) == false) {
+    collection[id][prop] = [value]; // adding array to "tracks" and adding value
+  } else if (prop == "tracks" && value != "") {
+    collection[id][prop].push(value); //adding value to end of existing tracks array
   } else if (value == "") {
     delete collection[id][prop];
   }
-  
-  /* didn't initially realize the period had to be in there after a bracket when mixing bracket notation
-  with dot notation. Turns out one pesky dot was the source of most of my troubles on this challenge. */
   
   return collection;
 }
