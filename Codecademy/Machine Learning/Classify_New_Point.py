@@ -1,4 +1,4 @@
-# Classify a new point based on k-nearest neighbors [WIP]
+# Classify a new point based on k-nearest neighbors
 
 from movies import movie_dataset, movie_labels
 
@@ -29,7 +29,7 @@ def classify(unknown, dataset, labels, k):
     else:
       num_good += 1
   if num_good > num_bad:
-    return 0
-  else:
     return 1
+  else:
+    return 0
 print(classify([.4, .2, .9], movie_dataset, movie_labels, 5))
