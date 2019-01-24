@@ -1,4 +1,4 @@
-These files are coursework for HarvardX: CS50.
+<h1>These files are coursework for HarvardX: CS50.</h1>
 
 <b>Keyboard Cat.sb2</b> is a program written in Scratch, an introductory language for new programmers. It can be viewed in action <a href="https://scratch.mit.edu/projects/265717447/">here</a>.
 
