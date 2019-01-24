@@ -5,3 +5,5 @@
 <b>hello.c</b> is a basic "Hello World" program written in C.
 
 <b>mario.c</b> is a program that asks for the user to input a number and will output a split pyramid of the given height. It is meant to resemble an obstacle in one of the early Mario games, as seen <a href="https://i.ytimg.com/vi/HKGeOPZk6_M/maxresdefault.jpg">here</a>.
+
+<b>cash.c</b> asks the user to input a number representing some amount of cash (in USD), and outputs the minimum number of coins that could be used to make change for that number.
